@@ -1,0 +1,20 @@
+<%= form_for @contact do |f| %>
+  
+   <%= f.label :name %>
+  <%= f.text_field :name, :required => true %><br /><br><br>
+ 
+
+  <%= f.label :email %>
+  <%= f.email_field :email, :required => true %>
+  <br /><br><br>
+ 
+ 
+ <%= f.label :message %>
+  <%= f.text_area :message, as: :text  %>
+  <br /><br><br>
+  
+  
+
+  Submit: <%= f.submit "Submit", class: "button" %>
+
+<% end %>
